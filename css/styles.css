@@ -1,15 +1,23 @@
 :root {
-    --main-color: #2e2f42;
+    --primary-brand-color: #4d5ae5;
+    --pressed-state-color: #404bbf;
+    --dark-color: #2e2f42;
+    --success-color: #31d0aa;
     --text-color: #434455;
+    --subtle-text-color: #8e8f99;
+    --accent-color: #e7e9fc;
+    --light-color: #f4f4fd;
+    --main-color: #2e2f42;
     --background-color: #ffffff;
-    --logo-accent-color: #4d5ae5;
+    --modal-background-color: #fcfcfc;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
+    color: var(--text-color);
+    background-color: var(--background-color);
     font-size: 16px;
-    line-height: 1.5; /* 24/16 */
+    line-height: 1.5; 
     font-weight: 400;
     letter-spacing: 0.02em;
 }
@@ -27,20 +35,20 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
+    color: var(--primary-brand-color);
 }
 .logo-change {
-    color: #2e2f42;
+    color: var(--dark-color);
 }
 .header-item a {
     font-weight: 500;
-    color: #2E2F42;
+    color: var(--dark-color);
 }
 .address-item a {
-    color: #434455;
+    color: var(--text-color);
 }
 .link:is(:hover, :focus, :active) {
-    color: #404bbf;
+    color: var(--pressed-state-color);
 }
 .header {}
 
