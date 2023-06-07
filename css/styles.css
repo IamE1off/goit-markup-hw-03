@@ -21,12 +21,39 @@ body {
     font-weight: 400;
     letter-spacing: 0.02em;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
 .link {
     text-decoration: none;
 }
 .list {
     list-style-type: none;
 }
+.container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 /*--------HEADER----------*/
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -36,6 +63,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-brand-color);
+    margin-right: auto;
 }
 .logo-change {
     color: var(--dark-color);
@@ -50,20 +78,36 @@ body {
 .link:is(:hover, :focus, :active) {
     color: var(--pressed-state-color);
 }
-.header {}
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
-.header-navigation {}
-
-.header-list {}
-
-.list {}
-
+.header-navigation {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+   
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
 .address {
     font-style: normal;
 }
 
-.address-list {}
-
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 /*-------------HERO---------*/
 .hero {
     background-color: #2E2F42;
