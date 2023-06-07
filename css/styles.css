@@ -348,6 +348,7 @@ project-title and team-title have similar css ----------*/
     flex-direction: column;
     padding: 32px 16px;
     gap: 8px;
+    border: 1px solid #e7e9fc;
     border-top: none;
 }
 .products-img {}
